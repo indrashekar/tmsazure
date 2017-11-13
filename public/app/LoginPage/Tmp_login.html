@@ -1,0 +1,37 @@
+<div class="clearfix">
+    <div class="col-lg-12">
+        <div class="text-center"> <img src="assets/images/integra.png" class="logoTmp"> </div>
+        <h2 class="text-center" class="h2Tmp" style="color:rgba(36, 29, 98, 0.74);">Talent Management System</h2>
+        <div class="">
+            <div class="card card-container">
+                <h4 class="text-center"><span class="SpanTmp1">TMS</span> <span class="SpanTmp2">Login</span></h4>
+                <p id="profile-name" class="profile-name-card"></p>
+                <form class="form-signin" ng-submit="validateUser(Username,Password)"> <span id="reauth-email" class="reauth-email"></span>
+                <span class="SpanTmp1">Username</span>
+                    <input type="text" id="Username" ng-model="Username" maxlength="50" id="inputEmail" class="form-control" placeholder="Username" autocomplete=off>
+                    <span class="SpanTmp1">Password</span>
+                    <input type="password" id="password" ng-model="Password" maxlength="50" id="inputPassword" class="form-control" placeholder="Password">
+                    <button class="btn btn-lg btn-primary btn-block btn-signin" ng-click="submitted=true" type="submit">Login</button>
+                </form>
+                <!-- /form -->
+                <!-- <a href="#" class="forgot-password">
+                Forgot the password?
+            </a>-->
+            </div>
+            <!-- /card-container -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /.row -->
+</div>
+<script>
+
+$('#Username').bind('copy paste', function (e) {
+        e.preventDefault();
+    });
+
+    $('#password').bind('copy paste', function (e) {
+        e.preventDefault();
+    });
+
+</script>

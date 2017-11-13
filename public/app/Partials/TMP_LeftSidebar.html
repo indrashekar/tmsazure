@@ -1,0 +1,81 @@
+<div class="wrapper" >
+<aside class="aside">
+            <!-- START Sidebar (left)-->
+            <div class="aside-inner">
+                <nav data-sidebar-anyclick-close="" class="sidebar">
+                    <!-- START sidebar nav-->
+                    <ul class="nav">
+                        <!-- START user info-->
+                        <li class="has-user-block">
+                            <div id="user-block" class="">
+                                <div class="item user-block">
+                                    <!-- User picture-->
+                                    <div class="user-block-picture">
+                                        <div class="user-block-status"> <img src="https://cdn2.iconfinder.com/data/icons/rcons-user/32/male-circle-512.png" alt="Avatar" width="60" height="60" class="img-thumbnail img-circle">
+                                            <div class="circle circle-success circle-lg"></div>
+                                        </div>
+                                    </div>
+                                    <!-- Name and Job-->
+                                    <div class="user-block-info" ng-model="EmployeeList"> <span class="user-block-name">{{EmployeeList.FirstName}} {{EmployeeList.LastName}}</span> <span class="user-block-role">{{EmployeeList.Designation}}</span> </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- END user info-->
+                        <!-- Iterates over all sidebar items-->
+                        <li ng-if="userInfo.RoleId==5 || userInfo.RoleId==3" ng-class="{active: state.current.name == 'home'} ">
+                            <a  ui-sref="home" title="Dashboard" data-toggle="collapse">
+                              <img src="assets/images/icons/home.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+                        </li>
+                        <li  ng-if="userInfo.RoleId==5" ng-class="{active: state.current.name == 'newEmployee'} ">
+                            <a ng-if="userinfodata.RoleId==5" ui-sref="newEmployee" title="Dashboard" data-toggle="collapse">
+                               <img src="assets/images/icons/addemployee.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Employee</a>
+                            
+                        </li>                        
+                         <li ng-if="userInfo.RoleId==5 || userInfo.RoleId==3 || userInfo.RoleId==4 || userInfo.RoleId==2 && userInfo.IsReportingHead==1" ng-class="{active: state.current.name == 'resourceskills'} ">
+                            <a ui-sref="resourceskills" title="Dashboard" data-toggle="collapse">
+                               <img src="assets/images/icons/resource skills.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resource Skills</a>
+                            
+                        </li>
+                           <li ng-if="userInfo.RoleId==2" ng-class="{active: state.current.name == 'skillmaster'} ">
+                            <a ui-sref="skillmaster" title="Dashboard" data-toggle="collapse">
+                               <img src="assets/images/icons/skill master.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skill</a>
+                        </li>
+
+                        <li ng-if="userInfo.RoleId==2" ng-class="{active: state.current.name == 'statusmaster'} ">
+                        <a ui-sref="statusmaster" title="Dashboard" data-toggle="collapse"> <img src="assets/images/icons/skill master.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status</a>
+                       </li>
+                            
+                             <li ng-if="userInfo.RoleId==5" ng-class="{active: state.current.name === 'trackingSkills'} ">
+                            <a ui-sref="trackingSkills" title="Dashboard" data-toggle="collapse">
+                               <img src="assets/images/icons/tracking skills.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               Tracking Skills</a>
+                            
+                        </li>
+
+                           <li ng-class="{active: state.current.name == 'profile'} "  >
+                            <a ui-sref="profile" title="Dashboard" data-toggle="collapse">
+                                <img src="assets/images/icons/viewselfdetails.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Self Details</a>
+                            
+                            
+                        </li>
+                    
+                        
+                      <!--  <li ng-class="{active: state.current.name == 'feedback'} ">
+                            <a ui-sref="feedback" title="Dashboard" data-toggle="collapse">
+                            <div class="pull-right label label-info">3</div><em class="icon-bubbles"></em> <span>Feedback</span>
+                            </a>
+                        </li> -->
+                         <li>
+                            <a ng-click="logout()"  title="Dashboard" data-toggle="collapse">
+                                <!--  <div class="pull-right label label-info">3</div>--><img src="assets/images/icons/logout.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout </a>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- END sidebar nav-->
+                </nav>
+            </div>
+     
+            <!-- END Sidebar (left)-->
+        </aside>
+</div> 
+

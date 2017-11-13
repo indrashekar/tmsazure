@@ -1,0 +1,139 @@
+<style>
+    .table>thead>tr>th {
+        padding: 8px 8px;
+        color: #ffffff!important;
+        background: #23b7e5!important;
+    }
+
+    #wrap {
+overflow: auto;
+height: 200px;
+}
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{currentEmployee.FirstName}} &nbsp;{{currentEmployee.LastName}}({{currentEmployee.EmployeeId}}) </h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://www.freeiconspng.com/uploads/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" class="img-circle img-responsive"> </div>
+                        <div class=" col-md-9 col-lg-9 ">
+                            <table class="table table-user-information">
+                                <tbody>
+                                   <!-- <tr>
+                                        <td><strong>Business Unit</strong></td>
+                                        <td>:</td>
+                                        <td>Enterprise BU</td>
+                                    </tr> -->
+                                    <tr>
+                                        <td><strong>Designation</strong></td>
+                                        <td>:</td>
+                                        <td>{{currentEmployee.Designation}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Date of Joining</strong></td>
+                                        <td>:</td>
+                                        <td>{{currentEmployee.DateOfJoining}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Date of Birth</strong></td>
+                                        <td>:</td>
+                                        <td>{{currentEmployee.DateOfBirth}}</td>
+                                    </tr>
+                                  <!--  <tr>
+                                        <td><strong>Home Address</strong></td>
+                                        <td>:</td>
+                                        <td>101,Whitefield,Banglore</td>
+                                    </tr> -->
+                                    <tr>
+                                        <td><strong>Email</strong></td>
+                                        <td>:</td>
+                                        <td><a href="mailto:info@support.com">{{currentEmployee.email}}</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Phone Number</strong></td>
+                                        <td>:</td>
+                                        <td>{{currentEmployee.ContactNo}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                         
+                            <P><strong>Skills</strong></P>
+                            <div id="wrap">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="col-xs-3">Category</th>
+                                        <th class="col-xs-3">Skills</th>
+                                        <th class="col-xs-3">Rating</th>
+                                        <th class="col-xs-3">Modified Date</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody ng-repeat="user in currentEmployeeResource">
+                                    <tr>
+                                        <td class="col-xs-3">{{user.categoryName}}</td>
+                                        <td class="col-xs-3">{{user.skillName}}</td>
+                                        <td class="col-xs-3">{{user.rating}}</td>
+                                        <td class="col-xs-3">{{user.ModifiedDate}}</td>
+                                    </tr>
+                                   
+                                </tbody>
+                                
+                            </table></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var panels = $('.user-infos');
+        var panelsButton = $('.dropdown-user');
+        panels.hide();
+        //Click dropdown
+        panelsButton.click(function () {
+            //get data-for attribute
+            var dataFor = $(this).attr('data-for');
+            var idFor = $(dataFor);
+            //current button
+            var currentButton = $(this);
+            idFor.slideToggle(400, function () {
+                //Completed slidetoggle
+                if (idFor.is(':visible')) {
+                    currentButton.html('<i class="glyphicon glyphicon-chevron-up text-muted"></i>');
+                }
+                else {
+                    currentButton.html('<i class="glyphicon glyphicon-chevron-down text-muted"></i>');
+                }
+            })
+        });
+        $('[data-toggle="tooltip"]').tooltip();
+        $('button').click(function (e) {
+            e.preventDefault();
+            alert("This is a demo.\n :-)");
+        });
+    });
+</script>
+<!--<style>
+        div.scrollable
+        {
+        width:100%;
+        height: 180px;
+        margin: 0;
+        padding: 0;
+        overflow-y: scroll
+        }
+        </style> -->
+        <script>
+                document.getElementById("wrap").addEventListener("scroll", function () {
+                var translate = "translate(0," + this.scrollTop + "px)";
+                this.querySelector("thead").style.transform = translate;
+                });
+                </script>
