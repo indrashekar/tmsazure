@@ -1,6 +1,6 @@
 var userInfo;
 /*Controller for Home Page Starts Here*/
-var LoginPageUrl = "http://172.16.1.129:3000";
+var LoginPageUrl = "http://localhost:3000";
 app.controller('SidebarController', function ($rootScope, $scope, $q, $http, $state, $stateParams, $interval, $window, $location, loginAuthentication) {
     $scope.state = $state;
     window.$scope = $scope;
