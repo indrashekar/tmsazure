@@ -1,5 +1,5 @@
 /*Controller for Home Page Starts Here*/
-var ApiUrlPrefix = "http://172.16.1.129:3000/api/";
+var ApiUrlPrefix = "http://localhost:3000/api/";
 app.controller('SkillsController', function ($scope, $http, $state, $stateParams, $window, $location, loginAuthentication, $timeout) {
 
 $scope.userinfodata = loginAuthentication.getLoggedInUserInfo();

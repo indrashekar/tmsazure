@@ -107,7 +107,7 @@
                                 <td>{{$index+1}}</td>
                                 <td>
                                     <div class="media">
-                                        <img src="assets/images/user.ico" alt="Image" class="img-responsive img-circle"> </div>
+                                        <img src="public/assets/images/user.ico" alt="Image" class="img-responsive img-circle"> </div>
                 </div>
                 </td>
                 <td>{{employee.EmployeeId}}</td>
@@ -135,7 +135,7 @@
                         <td>{{$index+1}}</td>
                         <td>
              <div class="media">
-             <img src="assets/images/user.ico" alt="Image" class="img-responsive img-circle"> </div>
+             <img src="public/assets/images/user.ico" alt="Image" class="img-responsive img-circle"> </div>
             </div>
             </td>
             <td>{{employee.EmployeeId}}</td>
@@ -180,7 +180,7 @@ padding: 0px 50px 0px 15px;">
         <div class="modal-content">
             <div class="modal-header" style="background:#a3bbca; color:white;">
                 <a type="button" class="pull-right btn btn-box-tool" style="color:white;">
-                    <img src="assets/images/icons/add.png" data-toggle="modal" data-target="#AddSkillModal" title="Add Skills"
+                    <img src="public/assets/images/icons/add.png" data-toggle="modal" data-target="#AddSkillModal" title="Add Skills"
                         style="cursor:pointer;width: 30px;">
                 </a>
                 <h4 class="modal-title" id="exampleModalLabel">Skills for {{Employee_First_Name}} {{Employee_Last_Name}} ({{CurEmployeeId}})</h4>
@@ -218,13 +218,13 @@ padding: 0px 50px 0px 15px;">
                                             <td ng-if="skill.categoryName">
                                                 <a href="" title="Edit Skills" ng-click="updateskill(skill.categoryName,skill.skillName,skill.rating,skill.EmployeeSkillId,CurEmployeeId,Employee_First_Name,Employee_Last_Name)"
                                                     data-toggle="modal" data-target="#EditSkillModal" data-whatever="@mdo">
-                                                    <img src="assets/images/icons/edit icon.png" data-toggle="tooltip" data-placement="top"
+                                                    <img src="public/assets/images/icons/edit icon.png" data-toggle="tooltip" data-placement="top"
                                                         class="width_edit_icon" data-toggle="tooltip" data-placement="top">
                                                 </a>&nbsp;&nbsp;
                                                 <!-- <a href="" ng-if="userinfodata.RoleId==5" title="Delete Skills" ng-click="deleteskills(skill.EmployeeSkillId,CurEmployeeId)"><img src="assets/images/icons/delete icon.png" class="width_edit_icon"></a>  -->
 
                                                 <a href="" ng-if="userinfodata.RoleId==5" title="Delete Skills" ng-click="deleteskills(skill.EmployeeSkillId,CurEmployeeId,Employee_First_Name,Employee_Last_Name)">
-                                                    <img src="assets/images/icons/delete icon.png" class="width_edit_icon">
+                                                    <img src="public/assets/images/icons/delete icon.png" class="width_edit_icon">
                                                 </a>
 
                                             </td>

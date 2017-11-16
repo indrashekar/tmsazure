@@ -24,37 +24,37 @@
                         <!-- Iterates over all sidebar items-->
                         <li ng-if="userInfo.RoleId==5 || userInfo.RoleId==3" ng-class="{active: state.current.name == 'home'} ">
                             <a  ui-sref="home" title="Dashboard" data-toggle="collapse">
-                              <img src="assets/images/icons/home.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
+                              <img src="public/assets/images/icons/home.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a>
                         </li>
                         <li  ng-if="userInfo.RoleId==5" ng-class="{active: state.current.name == 'newEmployee'} ">
                             <a ng-if="userinfodata.RoleId==5" ui-sref="newEmployee" title="Dashboard" data-toggle="collapse">
-                               <img src="assets/images/icons/addemployee.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Employee</a>
+                               <img src="public/assets/images/icons/addemployee.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add Employee</a>
                             
                         </li>                        
                          <li ng-if="userInfo.RoleId==5 || userInfo.RoleId==3 || userInfo.RoleId==4 || userInfo.RoleId==2 && userInfo.IsReportingHead==1" ng-class="{active: state.current.name == 'resourceskills'} ">
                             <a ui-sref="resourceskills" title="Dashboard" data-toggle="collapse">
-                               <img src="assets/images/icons/resource skills.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resource Skills</a>
+                               <img src="public/assets/images/icons/resource skills.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resource Skills</a>
                             
                         </li>
                            <li ng-if="userInfo.RoleId==2" ng-class="{active: state.current.name == 'skillmaster'} ">
                             <a ui-sref="skillmaster" title="Dashboard" data-toggle="collapse">
-                               <img src="assets/images/icons/skill master.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skill</a>
+                               <img src="public/assets/images/icons/skill master.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skill</a>
                         </li>
 
                         <li ng-if="userInfo.RoleId==2" ng-class="{active: state.current.name == 'statusmaster'} ">
-                        <a ui-sref="statusmaster" title="Dashboard" data-toggle="collapse"> <img src="assets/images/icons/skill master.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status</a>
+                        <a ui-sref="statusmaster" title="Dashboard" data-toggle="collapse"> <img src="public/assets/images/icons/skill master.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status</a>
                        </li>
                             
                              <li ng-if="userInfo.RoleId==5" ng-class="{active: state.current.name === 'trackingSkills'} ">
                             <a ui-sref="trackingSkills" title="Dashboard" data-toggle="collapse">
-                               <img src="assets/images/icons/tracking skills.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                               <img src="public/assets/images/icons/tracking skills.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                Tracking Skills</a>
                             
                         </li>
 
                            <li ng-class="{active: state.current.name == 'profile'} "  >
                             <a ui-sref="profile" title="Dashboard" data-toggle="collapse">
-                                <img src="assets/images/icons/viewselfdetails.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Self Details</a>
+                                <img src="public/assets/images/icons/viewselfdetails.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View Self Details</a>
                             
                             
                         </li>
@@ -67,7 +67,7 @@
                         </li> -->
                          <li>
                             <a ng-click="logout()"  title="Dashboard" data-toggle="collapse">
-                                <!--  <div class="pull-right label label-info">3</div>--><img src="assets/images/icons/logout.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout </a>
+                                <!--  <div class="pull-right label label-info">3</div>--><img src="public/assets/images/icons/logout.png" class="width_edit_icon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout </a>
                             </a>
                         </li>
                     </ul>

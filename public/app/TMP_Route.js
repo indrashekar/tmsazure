@@ -4,15 +4,15 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
     /*Partial  pages*/
     var partials = {
         header: {
-            templateUrl: 'app/partials/TMP_Header.html'
+            templateUrl: 'public/app/partials/TMP_Header.html'
             , controller: ''
         }
         , footer: {
-            templateUrl: 'app/partials/TMP_footer.html'
+            templateUrl: 'public/app/partials/TMP_footer.html'
             , controller: ''
         }
         , sidebar: {
-            templateUrl: 'app/partials/TMP_LeftSideBar.html'
+            templateUrl: 'public/app/partials/TMP_LeftSideBar.html'
             , controller: 'SidebarController'
         }
     , };
@@ -34,7 +34,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             , "viewSidebar": partials.sidebar
             , "viewFooter": partials.footer
             , "viewBody": {
-                templateUrl: "app/HomePage/TMP_Home.html"
+                templateUrl: "public/app/HomePage/TMP_Home.html"
                 , controller: "homeCtrl"
             }
         , }
@@ -59,7 +59,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             , "viewSidebar": partials.sidebar
             , "viewFooter": partials.footer
             , "viewBody": {
-                templateUrl: "app/EmployeeRegistration/TMP_EmpRegistration.html"
+                templateUrl: "public/app/EmployeeRegistration/TMP_EmpRegistration.html"
                 , controller: "addemployeeCtrl"
             }
         , }
@@ -84,7 +84,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             , "viewSidebar": partials.sidebar
             , "viewFooter": partials.footer
             , "viewBody": {
-                templateUrl: "app/Feedback/TMP_feedback.html"
+                templateUrl: "public/app/Feedback/TMP_feedback.html"
                 , controller: ""
             }
         , }
@@ -109,7 +109,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             , "viewSidebar": partials.sidebar
             , "viewFooter": partials.footer
             , "viewBody": {
-                templateUrl: "app/ResourceSkills/TMP_ResourceSkills.html"
+                templateUrl: "public/app/ResourceSkills/TMP_ResourceSkills.html"
                 , controller: "SkillsController"
             }
         , }
@@ -134,7 +134,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             , "viewSidebar": partials.sidebar
             , "viewFooter": partials.footer
             , "viewBody": {
-                templateUrl: "app/StatusMaster/statusmaster.html"
+                templateUrl: "public/app/StatusMaster/statusmaster.html"
                 , controller: "StatusMasterCtrl"
             }
         , }
@@ -159,7 +159,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             , "viewSidebar": partials.sidebar
             , "viewFooter": partials.footer
             , "viewBody": {
-                templateUrl: "app/SkillMaster/TMP_Skillmaster.html"
+                templateUrl: "public/app/SkillMaster/TMP_Skillmaster.html"
                 , controller: "SkillMasterCtrl"
             }
         , }
@@ -184,7 +184,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             , "viewSidebar": partials.sidebar
             , "viewFooter": partials.footer
             , "viewBody": {
-                templateUrl: "app/TrackingSkills/TMP_TrackingSkills.html"
+                templateUrl: "public/app/TrackingSkills/TMP_TrackingSkills.html"
                 , controller: "TrackController"
             }
         , }
@@ -209,7 +209,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
             , "viewSidebar": partials.sidebar
             , "viewFooter": partials.footer
             , "viewBody": {
-                templateUrl: "app/profile/TMP_profile.html"
+                templateUrl: "public/app/profile/TMP_profile.html"
                 , controller: "ProfileCtrl"
             }
         , }

@@ -25,7 +25,7 @@ background: #ddd;
 <!-- Page content-->
 <div class="content-wrapper">
 <a ng-if="userinfodata.RoleId==5" ui-sref="newEmployee">
-<img src="assets/images/icons/add.png" class="pull-right MRTop" data-toggle="tooltip" data-placement="top"
+<img src="public/assets/images/icons/add.png" class="pull-right MRTop" data-toggle="tooltip" data-placement="top"
 title="" data-original-title="Add Employee">
 </i>
 </a>
@@ -59,7 +59,7 @@ border-bottom: 1px solid #eee;
 <td>{{$index+1}}</td>
 <td>
 <div class="media">
-<img src="assets/images/user.ico" alt="user" class="img-responsive img-circle"> </div>
+<img src="public/assets/images/user.ico" alt="user" class="img-responsive img-circle"> </div>
 </td>
 <td>{{user.EmployeeId}}</td>
 <td>{{user.FirstName}} {{user.LastName}}</td>
@@ -74,14 +74,14 @@ border-bottom: 1px solid #eee;
 <td>
 <a ng-if="userinfodata.RoleId==5" href="" data-toggle="modal" data-target=".bs-example-modal-lg"
 style="text-decoration: none;">
-<img src="assets/images/icons/edit icon.png" data-toggle="tooltip"
+<img src="public/assets/images/icons/edit icon.png" data-toggle="tooltip"
 data-placement="top" class="width_edit_icon" data-toggle="tooltip"
 data-placement="top" ng-click="editEmployee(user.EmployeeId)"
 title="Edit Profile">
 </i>&nbsp; &nbsp; &nbsp;</a>
 <a ng-if="userinfodata.RoleId==5"
 href="">
-<img src="assets/images/icons/delete icon.png" class="width_edit_icon"
+<img src="public/assets/images/icons/delete icon.png" class="width_edit_icon"
 ng-click="deleteEmployeeProfile(user.EmployeeId)"
 data-toggle="tooltip" data-placement="top" title="Delete Profile">
 </i>
@@ -100,7 +100,7 @@ style="border:1px solid #e7e7e7;">
 <td>{{$index+1}}</td>
 <td>
 <div class="media">
-<img src="assets/images/user.ico" alt="user" class="img-responsive img-circle"> </div>
+<img src="public/assets/images/user.ico" alt="user" class="img-responsive img-circle"> </div>
 </td>
 <td>{{user.EmployeeId}}</td>
 <td>{{user.FirstName}} {{user.LastName}}</td>
@@ -115,7 +115,7 @@ style="border:1px solid #e7e7e7;">
 <td>
 <a href="" data-toggle="modal" data-target=".bs-example-modal-lg"
 style="text-decoration: none;">
-<img src="assets/images/icons/edit icon.png" data-toggle="tooltip"
+<img src="public/assets/images/icons/edit icon.png" data-toggle="tooltip"
 data-placement="top" class="width_edit_icon" data-toggle="tooltip"
 data-placement="top" ng-click="editEmployeeStatus(user.EmployeeId)"
 title="Edit Profile">
