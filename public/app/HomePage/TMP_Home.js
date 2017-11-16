@@ -1,4 +1,4 @@
-var ApiUrlPrefix = "http://localhost:3000/api/";
+var ApiUrlPrefix = "http://13.66.38.99/api/";
 
 app.controller('homeCtrl', function ($rootScope, $scope, $http, $state, $stateParams,loginAuthentication, $interval, $window, $location, $timeout,$filter) {
 

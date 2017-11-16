@@ -1,5 +1,5 @@
 /*Controller for Home Page Starts Here*/
-var ApiUrlPrefix = "http://172.16.1.129:3000/api/";
+var ApiUrlPrefix = "http://13.66.38.99/api/";
 app.controller('TrackController', function ($scope, $http, $state, $stateParams, $window, $location, loginAuthentication, $timeout) {
 	$scope.state = $state;
 	window.$scope = $scope;

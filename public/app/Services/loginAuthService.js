@@ -1,5 +1,5 @@
 /*EMS Login Authentication Service Starts Here*/
-var ApiUrlPrefix = "http://localhost:3000/api/";
+var ApiUrlPrefix = "http://13.66.38.99/api/";
 app.factory("loginAuthentication", ["$http", "$q", "$window", function ($http, $q, $window, $localStorage) {
     var userInfo;
 
