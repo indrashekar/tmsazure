@@ -22,7 +22,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locatio
         , title: "Login"
         , views: {
             "viewlogin": {
-                templateUrl: "app/LoginPage/Tmp_Login.html"
+                templateUrl: "public/app/LoginPage/Tmp_Login.html"
                 , controller: "LoginController"
             }
         , }
