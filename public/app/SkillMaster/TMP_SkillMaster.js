@@ -1,4 +1,4 @@
-var ApiUrlPrefix = "http://13.66.38.99/api/";
+var ApiUrlPrefix = "http://172.16.1.129:3000/api/";
 app.controller("SkillMasterCtrl", function ($rootScope, loginAuthentication, $scope, $http, $state, $stateParams, $interval, $window, $location, $timeout, $filter) {
 $scope.userinfodata = loginAuthentication.getLoggedInUserInfo();
 console.log($scope.userinfodata);
