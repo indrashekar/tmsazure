@@ -9,6 +9,7 @@ fileUpload = require('express-fileupload');*/
 
 app.use(bodyParser.json());
 //app.use(fileUpload());
+var server = http.createServer(app);
 
 var router = express.Router();  
 var multer = require('multer'); 
@@ -41,7 +42,5 @@ app.use(multer({
    
 app.use('/api', authentic);  
    
-app.listen(port, function() {
-	console.log('Listeing on port ' + port); 
-   
+server.listen(port, function () { // fifth and final change
 });
